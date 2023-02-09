@@ -1,9 +1,12 @@
 {
+  "homepage": "http://Elias-Ainsworth.github.io/ignews-project",
   "name": "ignews",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "test": "jest --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -31,6 +34,7 @@
     "@types/prismic-dom": "^2.1.1",
     "@types/react": "^17.0.3",
     "babel-jest": "^27.0.2",
+    "gh-pages": "^5.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.4",
     "jest-dom": "^4.0.0",
